@@ -37,6 +37,8 @@ button {
   display: grid;
   place-items: center;
 }
+
+//LOGİN_PAGE
 .login {
   background-color: #ffff;
   color: #1a1a1a;
@@ -59,6 +61,8 @@ button {
     }
   }
 }
+
+//ROOM_PAGE
 .room-page {
   background: white;
   color: #1a1a1a;
@@ -83,6 +87,7 @@ button {
   }
 }
 
+//CHAT_PAGE
 .chat-page {
   background: #fff;
   height: 70vh;
@@ -130,4 +135,91 @@ button {
 .chat-page main {
   flex: 1;
   color: #1a1a1a;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  gap: 10px;
+  padding: 10px;
+}
+
+.msg-other {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #1a1a1a;
+
+  div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    img {
+      width: 40px;
+      border-radius: 50%;
+      box-shadow: 2px 2px #1a1a1a;
+      object-fit: cover;
+    }
+
+    span {
+      font-weight: bold;
+      white-space: nowrap;
+    }
+  }
+  .other-text {
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    padding: 5px;
+    border: 1px solid #6598e0;
+  }
+  .time-name {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+}
+
+.msg-user {
+  background-color: rgb(189, 232, 58);
+  align-self: end;
+  padding: 4px 7px;
+  border-radius: 7px 7px 0px 7px;
+  color: #1a1a1a;
+}
+.time {
+  font-size: 10px;
+}
+
+.warn {
+  flex: 1;
+  display: grid;
+  place-items: center;
+  color: gray;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2d7e9bcf;
+  border-radius: 10px;
+}
+
+//EMOJİ SCREEN
+.chat-page .message-form {
+  position: relative;
+
+  div aside {
+    position: absolute;
+    right: 10px;
+    top: -450px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.555);
+    button {
+      padding: 0;
+    }
+  }
 }
