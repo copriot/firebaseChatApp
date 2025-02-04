@@ -109,7 +109,7 @@ button {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    position: fixed;
+    position: sticky;
   }
 
   .message-form {
@@ -118,7 +118,7 @@ button {
     justify-content: center;
     gap: 10px;
     padding: 10px;
-    position: fixed;
+    position: sticky;
     & > input {
       font-size: 15px;
       box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.589);
