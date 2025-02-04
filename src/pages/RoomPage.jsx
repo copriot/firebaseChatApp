@@ -26,6 +26,7 @@ const RoomPage = ({ setIsAuth, setRoom }) => {
   return (
     <div>
       <form onSubmit={handleSubmit} className="room-page">
+        <p>Dev.Z</p>
         <h1>Chat Odası</h1>
         <p>Hangi Odaya Gireceksiniz ?</p>
         <input type="text" placeholder="örn:Laklak" required />
